@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Offline LeetCode practice tracker — 200 Medium + 154 Revision problems with progress tracking, search & filtering.">
+  <title>LeetCode Practice: Nov + Dec</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <nav aria-label="Lists">
+      <h2>Practice</h2>
+      <button class="tab" id="t-medium">
+        <b>Medium 200</b>
+        <span></span>
+        <div class="mini"><i></i></div>
+      </button>
+      <button class="tab" id="t-revision">
+        <b>Revision 154</b>
+        <span></span>
+        <div class="mini"><i></i></div>
+      </button>
+      <div class="tot" id="tot"></div>
+    </nav>
+
+    <main>
+      <h1 id="ttl"></h1>
+      <p class="sub" id="sub"></p>
+
+      <div class="bar">
+        <div class="st">
+          <span><b id="dn">0</b> / <b id="tl">0</b> done</span>
+          <span id="pc">0%</span>
+        </div>
+        <div class="track">
+          <div class="fill" id="fl"></div>
+        </div>
+        <div class="tools">
+          <input type="search" id="q" placeholder="Search problems" aria-label="Search problems">
+          <button id="hd" aria-pressed="false">Hide solved</button>
+          <button id="rs">Reset this list</button>
+        </div>
+      </div>
+
+      <ul id="ls"></ul>
+      <div class="empty" id="em" hidden>No problems match.</div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
